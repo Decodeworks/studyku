@@ -1,0 +1,1640 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'popins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(17, 17, 17);
+}
+@media screen and (max-width: 450px) {
+    nav .menu ul{
+        position: fixed;
+        top: 90px;
+        background: rgba(96, 73, 73, 0.28); 
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+        backdrop-filter: blur(calc(50% - 24px));
+        height: 80vh;
+        width: auto;
+        left: -200%;
+        display: block;
+        text-align: center;
+        transition: all 400ms;
+        display: flex;
+        flex-direction: column;
+    }
+    nav .menu ul li{
+        margin-top: 50px;
+    }
+    nav .menu ul li a{
+        border: 10px;
+        width: 200px;
+        height: 40px;
+        font-size: 22px;
+        border-radius: 89px;
+        margin-left: 30px;
+        text-decoration: none;
+        color:green;
+    }
+    
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    label i{
+        color:white;
+        font-size: 60px;
+        margin-left: 90px;
+        font-weight: 200;
+        margin-top: 20px;
+    }
+    label{
+        max-width: 100%;
+        height: auto;
+    }
+    #checking{
+        display: none;
+    }
+    #checking:checked ~ ul{
+        left: 0%;
+    }
+    #checking:checked ~ label i::before{
+         content: '\f00d';
+    }
+    .logo{
+        max-width: 100%;
+        height: auto;
+    }
+    nav .logo img{
+        width: 60px;
+        height: 60px;
+        float:right;
+        margin-right: -510px;
+    }
+    nav{
+        margin-top: 30px;
+    }
+    section .container{
+        width: 100%;
+        height: auto;
+    }
+    top-section .container img{
+        height: 797px; 
+        width: clamp(880px,190%,900px);
+        margin-top: -55px;
+        margin-left: 80px; 
+    }
+    .section{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .contain{
+        height: auto;
+        margin-top: 260px;
+        text-align: center;
+        align-items: center;
+        margin-left: 90px;
+    }
+    .contain h3{
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+         font-size: clamp(40px,22vw,33px);
+         width: clamp(700px,110%,700px);
+         text-align: center;
+         align-items: center;
+         font-weight: 40;
+        padding-left: 190px;
+    }
+    .contain h1{
+        font-weight:100;
+        margin-left: 60px;
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-style: normal;
+        font-size: clamp(135px,10vw,150px);
+        height: auto;
+        text-align: center;
+        align-items: center;
+        width: clamp(800px,130%,800px);
+    }
+    .contain p{
+        width:  clamp(300px,120%,250px);
+        height: 60px;
+        border: 1px solid rgb(254, 246, 246);
+        border-radius: 50px; 
+        font-size: clamp(25px,14vw,20px); 
+        align-items: center; 
+        padding-top: 10px; 
+        margin-top: 30px;
+        margin-left: 170px;
+        color: white; 
+        justify-content: center;
+        align-items: center;
+        line-height: 35px;
+        padding-left: 4px;
+        text-align: center;
+        margin-left: 242px;
+    }
+
+    .para{
+        width: 100%;
+        margin-top: -20px;
+        margin-left: 50px;
+    }
+    .para p{
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(15px); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(35px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        color: white;
+        width: 960px;
+        font-size:30px;
+        height: 340px;
+        line-height: 36px;
+        letter-spacing: 2px;
+        border-radius: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        font-style: normal; 
+        text-align: center;
+        justify-content: space-between;
+        padding: 27px;
+    }
+    
+
+.radial-bottomgradient{
+    position: absolute;
+    top: 1800px;
+    left: 75%;
+    width: 160%;
+    height: 80%;
+    border-radius: 10%;
+    background: radial-gradient(rgb(245, 130, 130), transparent 70%,rgb(251, 134, 134),transparent 1%,rgb(241, 157, 157),transparent 1%);
+    opacity: 7%;
+    pointer-events: none; 
+
+}
+.radial-gradient{
+        position: absolute;
+        top: 120px;
+        left: 70px;
+        width: 190%;
+        height: 90%;
+        border-radius: 100%;
+        background: radial-gradient(rgb(245, 130, 130), transparent 70%,rgb(251, 134, 134),transparent 1%,rgb(241, 157, 157),transparent 1%);
+        opacity: 8%;
+        pointer-events: none; 
+    }
+
+    .head h2{
+        width: 150%;
+        margin-top: 150px;
+        margin-left: 208px;
+        align-items: center;
+        font-family: 'popins',sans-serif;
+        font-size: clamp(74px,90%,28px);
+        background: -webkit-linear-gradient(#8B8000, #f3c8c8);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }    
+    .card{
+        text-align: center;
+        width: clamp(227px,4vw,227px);
+        height: 271px;
+        color:white;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(calc(50% - 24px)); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(10px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        
+    }
+    .card h6{
+        font-size: clamp(16px,30vw,20px);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+    }
+    .card img{
+        height: 172px;
+        width:  clamp(172px,4vw,202px);
+        padding-top: 20px;
+    }
+    
+    .middle-container{
+        display: flex;
+        gap: 140px;
+        margin-left: 50px;
+    }
+    .quote{
+        display: flex;
+        margin-top: 280px;
+    }
+    .quoteimg{
+        margin-left: 100px;
+        align-items: center;
+    }
+    .quoteimg img{
+        height: 450px;
+        width: clamp(380px,100%,330px);
+    }
+    .quotep {
+        margin-top: 50px;
+        margin-left:425px;
+    }
+    .quotep p{
+        width:230%;
+        color: white;
+        font-size: clamp(25px,4vw,29px);
+        font-family: 'popins',sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 29px;
+        margin-top: 80px;
+    }
+    .quotea{
+        width:80%;
+        margin-left: 132px;
+        margin-top: -70px;
+    }
+    .footer{
+        background-color: #000000b5;
+        width: clamp(1050px,80%,1030px);
+        height:210px;
+        margin-top: 280px;
+    }
+    .down{
+        display: flex;
+        justify-content: space-between;
+    }
+    .down-left img{
+        padding-top: 20px;
+        width: clamp(280px,100%,250px);
+        height: 150px;
+        padding-left: 50px;
+    }
+    .down-right{
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+    .down-right p{
+        color:white;
+        font-size: clamp(15px,50%,16px);
+        padding-left: 140px;
+    }
+    .down-right img{
+        width:230px;
+        height:35px;
+    }
+    .letters{
+        margin-top: 30px;
+        display:flex;
+        margin-left: 270px;
+        gap:33px;
+    }
+    .letters p{
+        margin-top: -30px;
+        font-size: clamp(13.5px,29vw,10px);
+        color:white;
+    } 
+    .rights{
+        margin-top: 10px;
+        font-weight: 100;
+        font-size: clamp(13px,100%,10px);
+        color: white;
+        margin-left: 445px; 
+    }
+}    
+@media screen and (min-width: 451px) and (max-width: 600px){
+    nav .menu ul{
+        position: fixed;
+        top: 90px;
+        background: rgba(96, 73, 73, 0.28); 
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+        backdrop-filter: blur(calc(50% - 24px));
+        height: 100vh;
+        width: 90%;
+        left: -200%;
+        display: block;
+        text-align: center;
+        transition: all 400ms;
+        display: flex;
+        flex-direction: column;
+    }
+    nav .menu ul li{
+        margin-top: 50px;
+    }
+    nav .menu ul li a{
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 89px;
+        margin-left: 130px;
+    }
+    
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    label i{
+        color:white;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    label{
+        max-width: 100%;
+        height: auto;
+    }
+    #checking{
+        display: none;
+    }
+    #checking:checked ~ ul{
+        left: 0%;
+    }
+    #checking:checked ~ label i::before{
+         content: '\f00d';
+    }
+    .logo{
+        max-width: 100%;
+        height: auto;
+    }
+    nav .logo img{
+        width: 70px;
+        height: 70px;
+        margin-left: 860px;
+    }
+    nav{
+        margin-top: 30px;
+    }
+    section .container{
+        max-width: 100%;
+        height: auto;
+    }
+    top-section .container img{
+        height: 637px; 
+        width: clamp(550px,29vw,650px);
+        margin-left: 20px;
+        margin-top: -40px;
+    }
+    .section{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .contain{
+        width:130%;
+        height: auto;
+        margin-top: 190px;
+        margin-left: 150px;
+    }
+    .contain h3{
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+         font-size: clamp(.5rem,2vw,4rem);
+         margin-left:70px;
+    }
+    .contain h1{
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-style: normal;
+        font-size: clamp(2rem,17vw,7rem);
+    }
+    .contain p{
+        width: clamp(290px,25vw,370px);
+        height: 40px;
+        border: 1px solid rgb(254, 246, 246);
+        border-radius: 20px; 
+        font-size: clamp(2rem,2vw,4rem); 
+        align-items: center; 
+        padding-top: 10px; 
+        padding-left: 16px; 
+        margin-top: 10px;
+        margin-left: 59px;
+        color: white; 
+        justify-content: center;
+        align-items: center;
+        line-height: center;
+    }
+
+    .para{
+        max-width: 300%;
+        margin-top: -20px;
+        margin-left: 37px;
+    }
+    .para p{
+        margin-left: 30px;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(15px); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(35px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        color: white;
+        width: 850px;
+        font-size: 30px;
+        height: 390px;
+        line-height: 45px;
+        padding: 20px;
+        letter-spacing: .5px;
+        border-radius: 600px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-style: normal; 
+        text-align: center;
+        justify-content: center;
+    
+    }
+    .head h2{
+        width: 100%;
+        margin-top: 148px;
+        margin-left: 308px;
+        background: -webkit-linear-gradient(#8B8000, #f3c8c8);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'popins',sans-serif;
+        font-size: clamp(90px,100%,122px);
+    }
+    
+    .card{
+        text-align: center;
+        width: clamp(197px,7vw,227px);
+        height: 181px;
+        color:white;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(calc(50% - 24px)); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(10px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        margin-left: 60px;
+    }
+    .card h6{
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .card img{
+        height: 122px;
+        width:  clamp(132px,4vw,202px);
+        padding-top: 30px;
+    }
+    
+    .middle-container{
+        display: flex;
+        margin-left: 70px;
+    }
+    .quote{
+        display: flex;
+        margin-top: 200px;
+    }
+    .quoteimg{
+        margin-left: 30px;
+        align-items: center;
+    }
+    .quoteimg img{
+        height: 190px;
+        width: clamp(250px,80%,400px);
+    }
+    .quotep {
+        margin-top: 50px;
+        margin-left: 320px;
+    }
+    .quotep p{
+        width:300%;
+        color: white;
+        font-size: clamp(1rem,4vw,2rem);
+        font-family: 'popins',sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 36px;
+    }
+    .quotea{
+        margin-left: 112px;
+    }
+    .footer{
+        background-color: #000000b5;
+        width: clamp(830px,190%,985px);
+        height:170px;
+        margin-top: 200px;
+        
+    }
+    .down{
+        display: flex;
+        justify-content: space-between;
+    }
+    .down-left img{
+        width: clamp(130px,100%,40px);
+        height:110px;
+    }
+    .down-right{
+        margin-top: 28px;
+    }
+    .down-right p{
+        color:white;
+        font-size: 15px;
+    }
+    .down-right img{
+        width:clamp(240px,50%,250px);
+        height:60px;
+    }
+    .letters{
+        display:flex;
+        margin-left: 20px;
+    }
+    .letters p{
+        margin-top: -15px;
+        margin-left: 35px;
+        font-size: 14px;
+        color:white;
+    } 
+    .rights{
+        font-size: 12px;
+        color: white;
+        margin-left: 345px; 
+    }
+}        
+
+.head h2{
+    background: -webkit-linear-gradient(#8B8000, #f3c8c8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    nav .menu ul{
+        position: fixed;
+        top: 90px;
+        background: rgba(96, 73, 73, 0.28); 
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+        backdrop-filter: blur(calc(50% - 24px));
+        height: 100vh;
+        width: 90%;
+        left: -200%;
+        display: block;
+        text-align: center;
+        transition: all 400ms;
+        display: flex;
+        flex-direction: column;
+    }
+    nav .menu ul li{
+        margin-top: 50px;
+    }
+    nav .menu ul li a{
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 89px;
+        margin-left: 130px;
+    }
+    
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    label i{
+        color:white;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    label{
+        max-width: 100%;
+        height: auto;
+    }
+    #checking{
+        display: none;
+    }
+    #checking:checked ~ ul{
+        left: 0%;
+    }
+    #checking:checked ~ label i::before{
+         content: '\f00d';
+    }
+    .logo{
+        max-width: 100%;
+        height: auto;
+    }
+    nav .logo img{
+        width: 50px;
+        height: 50px;
+        margin-left: 460px;
+    }
+    nav{
+        margin-top: 30px;
+    }
+    section .container{
+        max-width: 100%;
+        height: auto;
+    }
+    top-section .container img{
+        height: 537px; 
+        width: clamp(600px,11vw,750px);
+        margin-left: 20px;
+        margin-top: -40px;
+    }
+    .section{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .contain{
+        height: auto;
+        margin-top: 190px;
+        margin-left: 150px;
+    }
+    .contain h3{
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+         font-size: clamp(1.5rem,4vw,1.9rem);
+         margin-left:40px;
+    }
+    .contain h1{
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-style: normal;
+        font-size: clamp(2rem,10vw,7rem);
+    }
+    .contain p{
+        width: clamp(170px,14vw,70px);
+        height: 40px;
+        border: 1px solid rgb(254, 246, 246);
+        border-radius: 20px; 
+        font-size: clamp(.9rem,1vw,1rem); 
+        align-items: center; 
+        padding-top: 10px; 
+        padding-left: 16px; 
+        margin-top: 10px;
+        margin-left: 49px;
+        color: white; 
+        justify-content: center;
+        align-items: center;
+        line-height: center;
+    }
+
+    .para{
+        margin-top: -20px;
+        margin-left: 20px;
+    }
+    .para p{
+        margin-left: 30px;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(15px); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(35px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        color: white;
+        width: clamp(48rem,100%,35rem);
+        font-size: 26px;
+        height: 410px;
+        line-height: 45px;
+        padding: 10px;
+        letter-spacing: 3px;
+        border-radius: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-style: normal; 
+        text-align: center;
+        justify-content: space-between;
+    }
+    .head h2{
+        width: 70%;
+        margin-top: 68px;
+        margin-left: 278px;
+        color: #8B8000;
+        font-family: 'popins',sans-serif;
+        font-size: clamp(25px,20vw,38px);
+    }
+    
+    .card{
+        text-align: center;
+        width: clamp(187px,8vw,257px);
+        height: 191px;
+        color:white;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(calc(50% - 24px)); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(10px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        margin-left: 80px;
+    }
+    .card h6{
+        font-size: 15px;
+    }
+    .card img{
+        height: 132px;
+        width: clamp(112px,4vw,202px);
+        padding-top: 30px;
+    }
+    
+    .middle-container{
+        display: flex;
+    }
+    .quote{
+        display: flex;
+        margin-top: 200px;
+        margin-left: 80px;
+    }
+    .quoteimg{
+        margin-left: 30px;
+        align-items: center;
+    }
+    .quoteimg img{
+        height: 230px;
+        width: clamp(220px,100%,380px);
+    }
+    .quotep {
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .quotep p{
+        width:100%;
+        color: white;
+        font-size: clamp(14px,22vw,22px);
+        font-family: 'popins',sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 22px;
+    }
+    .footer{
+        background-color: #000000b5;
+        width: clamp(600px,130vw,860px);
+        height:220px;
+        margin-top: 200px;
+        
+    }
+    .down{
+        display: flex;
+        justify-content: space-between;
+    }
+    .down-left img{
+        width: 270px;
+        height:190px;
+    }
+    .down-right{
+        margin-top: 48px;
+    }
+    .down-right p{
+        color:white;
+        font-size: 15px;
+    }
+    .down-right img{
+        width:250px;
+        height:70px;
+    }
+    .letters{
+        display:flex;
+        margin-left: 60px;
+        margin-top: -10px;
+    }
+    .letters p{
+        margin-left: 40px;
+        font-size: 18px;
+        color:white;
+    } 
+    .rights{
+        color: white;
+        margin-left: 360px; 
+    }
+}    
+@media screen and (min-width: 769px) and (max-width: 992px){
+    nav .menu ul{
+        position: fixed;
+        top: 90px;
+        background: rgba(96, 73, 73, 0.28); 
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+        backdrop-filter: blur(calc(50% - 24px));
+        height: 100vh;
+        width: 90%;
+        left: -200%;
+        display: block;
+        text-align: center;
+        transition: all 400ms;
+        display: flex;
+        flex-direction: column;
+    }
+    nav .menu ul li{
+        margin-top: 50px;
+    }
+    nav .menu ul li a{
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 89px;
+        margin-left: 130px;
+    }
+    
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    label i{
+        color:white;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    label{
+        max-width: 100%;
+        height: auto;
+    }
+    #checking{
+        display: none;
+    }
+    #checking:checked ~ ul{
+        left: 0%;
+    }
+    #checking:checked ~ label i::before{
+         content: '\f00d';
+    }
+    .logo{
+        max-width: 100%;
+        height: auto;
+    }
+    nav .logo img{
+        width: 50px;
+        height: 50px;
+        margin-left: 60px;
+    }
+    nav{
+        margin-top: 30px;
+    }
+    section .container{
+        max-width: 100%;
+        height: auto;
+    }
+    top-section .container img{
+        height: 637px; 
+        width: clamp(500px,10vw,550px);
+        margin-left: 20px;
+        margin-top: -40px;
+    }
+    .section{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .contain{
+        height: auto;
+        margin-top: 190px;
+        margin-left: 150px;
+    }
+    .contain h3{
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+         font-size: clamp(1.5rem,4vw,1.9rem);
+         margin-left:40px;
+    }
+    .contain h1{
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-style: normal;
+        font-size: clamp(2rem,10vw,7rem);
+    }
+    .contain p{
+        width: clamp(170px,14vw,70px);
+        height: 40px;
+        border: 1px solid rgb(254, 246, 246);
+        border-radius: 20px; 
+        font-size: clamp(.9rem,1vw,1rem); 
+        align-items: center; 
+        padding-top: 10px; 
+        padding-left: 16px; 
+        margin-top: 10px;
+        margin-left: 49px;
+        color: white; 
+        justify-content: center;
+        align-items: center;
+        line-height: center;
+    }
+
+    .para{
+        max-width: 100%;
+        margin-top: -20px;
+        margin-left: 20px;
+    }
+    .para p{
+        margin-left: 30px;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(15px); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(35px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        color: white;
+        width: clamp(690px,90vw,780px);
+        font-size: 18px;
+        height: 350px;
+        line-height: 35px;
+        padding: 10px;
+        letter-spacing: 3px;
+        border-radius: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-style: normal; 
+        text-align: center;
+        justify-content: space-between;
+    }
+    .head h2{
+        width: 60%;
+        margin-top: 68px;
+        margin-left: 208px;
+        color: #8B8000;
+        font-family: 'popins',sans-serif;
+        font-size: clamp(24px,30vw,48px);
+    }
+    
+    .card{
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        color:white;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(calc(50% - 24px)); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(10px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        margin-left: 50px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+    .card img{
+        height: 142px;
+        width: clamp(152px,4vw,252px);
+        padding-top: 30px;
+    }
+    
+    .middle-container{
+        display:flex;
+    
+    }
+    .quote{
+        display:flex;
+        margin-top: 200px;
+    }
+    .quoteimg{
+        margin-left: 30px;
+        align-items: center;
+    }
+    .quoteimg img{
+        height: 170px;
+        width: clamp(150px,100%,180px);
+    }
+    .quotep {
+        margin-left: 150px;
+    }
+    .quotep p{
+        width:100%;
+        color: white;
+        font-size: clamp(14px,22vw,22px);
+        font-family: 'popins',sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 22px;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .footer{
+        background-color: #000000b5;
+        width: clamp(780px,540vw,900px);
+        height:250px;
+        margin-top: 250px;
+    }
+    .down{
+        display: flex;
+        justify-content: space-between;
+    }
+    .down-left img{
+        width: 190px;
+        height:150px;
+    }
+    .down-right{
+        margin-top: 28px;
+    }
+    .down-right p{
+        color:white;
+        font-size: 15px;
+    }
+    .down-right img{
+        width:200px;
+        height:60px;
+    }
+    .letters{
+        display:flex
+    }
+    .letters p{
+        margin-left: 30px;
+        font-size: 14px;
+        color:white;
+    } 
+    .rights{
+        color: white;
+        margin-left: 200px; 
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1199px){
+    body{
+        display:none;
+    }
+    nav .menu ul{
+        position: fixed;
+        top: 90px;
+        background: rgba(96, 73, 73, 0.28); 
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+        backdrop-filter: blur(calc(50% - 24px));
+        height: 100vh;
+        width: 90%;
+        left: -200%;
+        display: block;
+        text-align: center;
+        transition: all 400ms;
+        display: flex;
+        flex-direction: column;
+    }
+    nav .menu ul li{
+        margin-top: 50px;
+    }
+    nav .menu ul li a{
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 89px;
+        margin-left: 130px;
+    }
+    
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    label i{
+        color:white;
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    label{
+        max-width: 100%;
+        height: auto;
+    }
+    #checking{
+        display: none;
+    }
+    #checking:checked ~ ul{
+        left: 0%;
+    }
+    #checking:checked ~ label i::before{
+         content: '\f00d';
+    }
+    .logo{
+        max-width: 100%;
+        height: auto;
+    }
+    nav .logo img{
+        width: 50px;
+        height: 50px;
+        margin-left: 460px;
+    }
+    nav{
+        margin-top: 30px;
+    }
+    section .container{
+        max-width: 100%;
+        height: auto;
+    }
+    top-section .container img{
+        height: 537px; 
+        width: clamp(500px,10vw,550px);
+        margin-left: 20px;
+        margin-top: -40px;
+    }
+    .section{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .contain{
+        height: auto;
+        margin-top: 190px;
+        margin-left: 150px;
+    }
+    .contain h3{
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+         font-size: clamp(1.5rem,4vw,1.9rem);
+         margin-left:40px;
+    }
+    .contain h1{
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-style: normal;
+        font-size: clamp(2rem,10vw,7rem);
+    }
+    .contain p{
+        width: clamp(170px,14vw,70px);
+        height: 40px;
+        border: 1px solid rgb(254, 246, 246);
+        border-radius: 20px; 
+        font-size: clamp(.9rem,1vw,1rem); 
+        align-items: center; 
+        padding-top: 10px; 
+        padding-left: 16px; 
+        margin-top: 10px;
+        margin-left: 49px;
+        color: white; 
+        justify-content: center;
+        align-items: center;
+        line-height: center;
+    }
+
+    .para{
+        max-width: 100%;
+        margin-top: -20px;
+        margin-left: 20px;
+    }
+    .para p{
+        margin-left: 30px;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(15px); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(35px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        color: white;
+        width: clamp(850px,150vw,910px);
+        font-size: 30px;
+        height: 350px;
+        line-height: 40px;
+        padding: 10px;
+        letter-spacing: 3px;
+        border-radius: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-style: normal; 
+        text-align: center;
+        justify-content: space-between;
+    }
+    .head h2{
+        width: 70%;
+        margin-top: 98px;
+        margin-left: 268px;
+        color: #8B8000;
+        font-family: 'popins',sans-serif;
+        font-size: clamp(24px,20vw,48px);
+    }
+    
+    .card{
+        text-align: center;
+        width: clamp(167px,8vw,267px);
+        height: 220px;
+        color:white;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(calc(50% - 24px)); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(10px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        margin-left: 100px;
+    }
+    .card h6{
+        font-size: 15px;
+    }
+    .card img{
+        height: 152px;
+        width: clamp(112px,4vw,202px);
+        padding-top: 30px;
+    }
+    
+    .middle-container{
+        display: flex;
+        margin-left: 50px;
+    }
+    .quote{
+        display: flex;
+        margin-top: 200px;
+        margin-left: 50px;
+    }
+    .quoteimg{
+        margin-left: 30px;
+        align-items: center;
+    }
+    .quoteimg img{
+        height: 250px;
+        width: clamp(250px,100%,400px);
+    }
+    .quotep {
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    .quotep p{
+        width:150%;
+        color: white;
+        font-size: clamp(14px,22vw,22px);
+        font-family: 'popins',sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 22px;
+    }
+    .footer{
+        background-color: #000000b5;
+        width: clamp(830px,140vw,1000px);
+        height:200px;
+        margin-top: 200px;
+        
+    }
+    .down{
+        display: flex;
+        justify-content: space-between;
+    }
+    .down-left img{
+        width: 300px;
+        height:150px;
+    }
+    .down-right{
+        margin-top: 28px;
+    }
+    .down-right p{
+        color:white;
+        font-size: 15px;
+    }
+    .down-right img{
+        width:200px;
+        height:60px;
+    }
+    .letters{
+        display:flex
+    }
+    .letters p{
+        margin-left: 80px;
+        font-size: 18px;
+        color:white;
+    } 
+    .rights{
+        color: white;
+        margin-left: 420px; 
+        font-size: 17px;
+    }
+
+}
+@media  screen and (min-width:1200px) {
+
+    nav{
+        height: 120px;
+    }
+    nav .logo{
+        float: right;
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+    nav .container{
+        max-width: 1200;
+    }
+    nav .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 30px 10px 40px 5px ;
+        display: inline-block;
+    }
+    nav .menu ul{
+        display: flex;
+    }
+    nav ul li a{
+        position: center;
+        margin: 15px;
+        margin-left: 25px;
+        font-size: 17px; 
+        font-weight: 600px;
+        display: flex;
+        width: 130px;
+        height: 40px;
+        border: 1px solid rgb(254, 246, 246);
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom, white, #3B578D);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+        padding: 20px;
+        align-items: center;
+        line-height: center;
+        justify-content: center;
+    }
+    label i{
+        color: azure;
+        font-size: 40px;
+        margin-left: 40px;
+    }
+    #checking {
+        display: none;
+    }
+    label{
+        display: none;
+    }
+    top-section .container img{
+        height: 837px; 
+        width: 823px;
+        margin-left: -95px;
+        margin-top: -33px;
+    }
+    .section{
+        display: flex;
+    }
+    .contain{
+        margin-top: 250px;
+        padding-left: 56px;
+        margin-right: 60px;
+    }
+    .contain h3{
+        margin-left: 190px;
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 30px;
+    }
+    .contain h1{
+        color: white;
+        font-family: 'Poiret One', sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 105px;
+    }
+    .contain p{
+        width: 220px;
+        height: 45px;
+        border: 1px solid rgb(254, 246, 246);
+        border-radius: 20px; 
+        font-size: 19px; 
+        align-items: center; 
+        padding-top: 10px; 
+        padding-left: 16px; 
+        margin-left: 212px; 
+        margin-top: 20px; 
+        color: white; 
+        justify-content: center;
+        align-items: center;
+        line-height: center;
+    }
+    .para p{
+        margin-right: 180px;
+        margin-left: 100px;
+        margin-top: -35px;
+        width: 1252px;
+        height: 251px;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(15px); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(35px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+        text-align: center;
+        border-radius: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-style: normal; 
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        justify-content: space-between;
+        letter-spacing: 3px;
+        padding-top: 70px;
+        line-height: 25px;
+    }
+    .radial-gradient{
+        position: absolute;
+        top: 150px;
+        left: 850px;
+        width: 40%;
+        height: 80%;
+        border-radius: 100%;
+        background: radial-gradient(rgb(245, 130, 130), transparent 70%,rgb(251, 134, 134),transparent 1%,rgb(241, 157, 157),transparent 1%);
+        opacity: 20%;
+        pointer-events: none; 
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .radial-sidegradient{
+        position: absolute;
+        top: 650px;
+        right: 1000px;
+        width: 50%;
+        height: 100%;
+        border-radius: 100%;
+        background: radial-gradient(blue, transparent 50%,blue,transparent 2%,blue,transparent 2%);
+        opacity: 10%;
+        pointer-events: none; 
+    }
+    
+    
+    .radial-bottomgradient{
+        position: absolute;
+        top: 1550px;
+        right: 20px;
+        width: 42%;
+        height: 80%;
+        border-radius: 100%;
+         background: radial-gradient(rgb(245, 130, 130), transparent 70%,rgb(251, 134, 134),transparent 1%,rgb(241, 157, 157),transparent 1%);
+        opacity: 15%;
+        pointer-events: none; 
+    
+    }
+    .head h2{
+        margin-top: 88px;
+        margin-left: 528px;
+        color: #8B8000;
+        font-family: 'popins',sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 33px;
+    }
+    .middle-container{
+        margin-top: 78px;
+        align-items: center;
+    }
+    .card{
+        text-align: center;
+        margin-left: 130px;
+        width: 327px;
+        height: 361px;
+        color:white;
+        background: rgba(96, 73, 73, 0.28); /* Increased opacity to make the glass effect more visible */
+        border-radius: 35px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increased blur and shadow opacity */
+        backdrop-filter: blur(calc(50% - 24px)); /* Increased blur for backdrop */
+        -webkit-backdrop-filter: blur(10px); /* Vendor prefix for older browsers */
+        border-top: 1px solid rgba(255, 255, 255, 0.15); 
+        border-left: 1px solid rgba(247, 241, 241, 0.15); 
+        border-right: 1px solid rgba(247, 241, 241, 0.15); 
+    }
+    
+    .card img{
+        height: 242px;
+        width: 242px;
+        padding-top: 30px;
+    }
+    
+    .middle-container{
+        display: flex;
+    }
+    .quote{
+        display: flex;
+    }
+    .quoteimg{
+        margin-top: 180px;
+        margin-left: 30px;
+        align-items: center;
+    }
+    .quoteimg img{
+        height: 610px;
+        width: 524px;
+    }
+    .quotep{
+        margin-top: 440px;
+        color: white;
+        margin-left: 250px;
+        font-size: 23px;
+        font-family: 'popins',sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .quoten{
+        margin-top:530px;
+        color: white;
+        margin-left: -370px;
+        font-family: Poppins, sans-serif;        
+        font-style: normal; 
+        font-size: 21px;
+        font-weight: 400;
+    }
+    
+    .radial-sidegradient{
+        position: absolute;
+        top: 650px;
+        right: 1000px;
+        width: 50%;
+        height: 100%;
+        border-radius: 100%;
+        background: radial-gradient(blue, transparent 50%,blue,transparent 2%,blue,transparent 2%);
+        opacity: 10%;
+        pointer-events: none; 
+    }
+    
+    
+    .radial-bottomgradient{
+        position: absolute;
+        top: 1550px;
+        right: 20px;
+        width: 42%;
+        height: 80%;
+        border-radius: 100%;
+         background: radial-gradient(rgb(245, 130, 130), transparent 70%,rgb(251, 134, 134),transparent 1%,rgb(241, 157, 157),transparent 1%);
+        opacity: 15%;
+        pointer-events: none; 
+    
+    }
+    .radial-bottomredgradient{
+        position: absolute;
+        top: 2140px;
+        left: -80px;
+        width: 50%;
+        height: 100%;
+        border-radius: 100%;
+        background: radial-gradient(#7e58f8, transparent 68%,#8467f9,transparent 2%,#a06cfa,transparent 2%);
+        opacity: 15%;
+        pointer-events: none; 
+    
+    }
+    .card-link {
+        display: contents;
+        width: 0%;
+        height: 0%;
+        text-decoration: none;
+        color: inherit; /* optional: preserve original text color */
+    }
+    footer{
+        background-color: #000000b5;
+        margin-top: 230px;
+    }
+    .down{
+        display: flex;
+        justify-content: space-between;
+    }
+    .down-left img{
+        margin-left: 170px;
+        height: 113px;
+        width: 227px;
+    }
+    .down-right{
+        margin-top: 28px;
+        margin-right: 190px;
+    }
+    .down-right img{
+        height: 30px;
+        width: 264px;
+    }
+    .down-right p{
+        color:rgb(255, 252, 252);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .letters{
+        margin-left: 350px;
+        display: flex;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .letters p{
+        color: white;
+        margin: 30px;
+    }
+    .rights{
+        margin-left:668px;
+        color:white;
+        font-size: 12px;
+    }
+           
+}
